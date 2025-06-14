@@ -31,16 +31,16 @@ void forceStop(){
 
 void handleGarage(int control){
   // Force Stop before operation
-  forceStop();
+  //forceStop();
 
   // Garage Operation
   digitalWrite(control, LOW);
   digitalWrite(GARAGE_COMMON, LOW);
 
-  delay(200);
+  delay(300);
   digitalWrite(GARAGE_COMMON, HIGH);
   digitalWrite(control, HIGH);
-  delay(200);
+  //delay(300);
   
   char *controlStr;
   switch(control){
